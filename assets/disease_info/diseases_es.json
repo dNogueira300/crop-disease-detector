@@ -1,0 +1,268 @@
+{
+  "Apple___Apple_scab": {
+    "nombre": "Manzana — Sarna del manzano",
+    "cultivo": "Manzana", "estado": "enfermo", "urgencia": "alta",
+    "descripcion": "Infección fúngica que produce manchas oscuras y aterciopeladas en hojas y frutos.",
+    "sintomas": ["Manchas verde oliva o negras en hojas", "Lesiones hundidas en los frutos", "Caída prematura de hojas"],
+    "tratamiento": ["Aplicar fungicida cúprico en primavera", "Retirar y quemar hojas infectadas caídas", "Evitar el riego por aspersión"]
+  },
+  "Apple___Black_rot": {
+    "nombre": "Manzana — Podredumbre negra",
+    "cultivo": "Manzana", "estado": "enfermo", "urgencia": "alta",
+    "descripcion": "Enfermedad fúngica que causa manchas foliares y pudrición del fruto.",
+    "sintomas": ["Manchas circulares marrones en hojas", "Frutos con zonas negras hundidas", "Cancros en ramas"],
+    "tratamiento": ["Podar y destruir ramas infectadas", "Aplicar fungicida preventivo en floración", "Limpiar frutos momificados del árbol"]
+  },
+  "Apple___Cedar_apple_rust": {
+    "nombre": "Manzana — Roya del manzano",
+    "cultivo": "Manzana", "estado": "enfermo", "urgencia": "media",
+    "descripcion": "Enfermedad fúngica con ciclo de vida entre manzanos y cedros.",
+    "sintomas": ["Manchas amarillo-anaranjadas en el haz de las hojas", "Lesiones con puntos marrones en el envés", "Deformación de frutos jóvenes"],
+    "tratamiento": ["Aplicar fungicida al inicio de la floración", "Eliminar plantas de cedro cercanas si es posible", "Aplicar tratamientos preventivos en primavera"]
+  },
+  "Apple___healthy": {
+    "nombre": "Manzana — Planta sana",
+    "cultivo": "Manzana", "estado": "sano", "urgencia": "ninguna",
+    "descripcion": "La planta se encuentra en buen estado fitosanitario. No se detectaron enfermedades.",
+    "sintomas": [],
+    "tratamiento": ["Mantener riego adecuado", "Fertilizar según la temporada", "Continuar con inspecciones periódicas"]
+  },
+  "Blueberry___healthy": {
+    "nombre": "Arándano — Planta sana",
+    "cultivo": "Arándano", "estado": "sano", "urgencia": "ninguna",
+    "descripcion": "La planta de arándano está sana. No se detectaron signos de enfermedad.",
+    "sintomas": [],
+    "tratamiento": ["Mantener pH del suelo entre 4.5 y 5.5", "Riego regular sin encharcamiento"]
+  },
+  "Cherry_(including_sour)___Powdery_mildew": {
+    "nombre": "Cerezo — Oídio del cerezo",
+    "cultivo": "Cerezo", "estado": "enfermo", "urgencia": "media",
+    "descripcion": "Hongo que produce un polvo blanco sobre hojas y brotes jóvenes.",
+    "sintomas": ["Polvo blanco harinoso sobre las hojas", "Hojas enrolladas o deformadas", "Frutos con manchas blancas"],
+    "tratamiento": ["Aplicar fungicida con azufre o bicarbonato", "Mejorar la ventilación entre plantas", "Podar brotes muy afectados"]
+  },
+  "Cherry_(including_sour)___healthy": {
+    "nombre": "Cerezo — Planta sana",
+    "cultivo": "Cerezo", "estado": "sano", "urgencia": "ninguna",
+    "descripcion": "El cerezo está en buen estado. No se detectaron enfermedades.",
+    "sintomas": [],
+    "tratamiento": ["Mantener riego y fertilización estacional"]
+  },
+  "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+    "nombre": "Maíz — Mancha gris foliar",
+    "cultivo": "Maíz", "estado": "enfermo", "urgencia": "alta",
+    "descripcion": "Enfermedad fúngica que reduce significativamente el rendimiento del maíz.",
+    "sintomas": ["Lesiones rectangulares grises o marrones en hojas", "Manchas con bordes definidos por las nervaduras", "Hojas que se secan desde el ápice"],
+    "tratamiento": ["Aplicar fungicida con trifloxistrobina", "Usar variedades resistentes en próxima siembra", "Rotar cultivos con leguminosas"]
+  },
+  "Corn_(maize)___Common_rust_": {
+    "nombre": "Maíz — Roya común",
+    "cultivo": "Maíz", "estado": "enfermo", "urgencia": "media",
+    "descripcion": "Infección fúngica que produce pústulas de color marrón-rojizo en ambas caras de la hoja.",
+    "sintomas": ["Pústulas ovales de color canela en hojas", "Las pústulas se oscurecen con el tiempo", "Hojas con aspecto oxidado"],
+    "tratamiento": ["Aplicar fungicida preventivo a la aparición de síntomas", "Usar semillas certificadas resistentes", "Evitar densidades de siembra muy altas"]
+  },
+  "Corn_(maize)___Northern_Leaf_Blight": {
+    "nombre": "Maíz — Tizón del norte",
+    "cultivo": "Maíz", "estado": "enfermo", "urgencia": "alta",
+    "descripcion": "Enfermedad fúngica grave que puede causar pérdidas de hasta el 50% del rendimiento.",
+    "sintomas": ["Lesiones alargadas de color verde grisáceo", "Lesiones que pueden medir 15-20 cm de largo", "Secado y muerte de tejido foliar"],
+    "tratamiento": ["Aplicar fungicida estrobirulina al detectar primeros síntomas", "Usar híbridos resistentes", "Rotación de cultivos"]
+  },
+  "Corn_(maize)___healthy": {
+    "nombre": "Maíz — Planta sana",
+    "cultivo": "Maíz", "estado": "sano", "urgencia": "ninguna",
+    "descripcion": "El maíz está sano. No se detectaron enfermedades.",
+    "sintomas": [],
+    "tratamiento": ["Mantener fertilización nitrogenada adecuada", "Controlar malezas para reducir competencia"]
+  },
+  "Grape___Black_rot": {
+    "nombre": "Vid — Podredumbre negra",
+    "cultivo": "Vid", "estado": "enfermo", "urgencia": "alta",
+    "descripcion": "Enfermedad fúngica muy destructiva que afecta hojas, tallos y frutos de la vid.",
+    "sintomas": ["Manchas circulares beige con borde oscuro en hojas", "Frutos que se arrugan y ennegrecen", "Momificación de uvas"],
+    "tratamiento": ["Aplicar fungicida cúprico antes de la brotación", "Eliminar todos los frutos momificados y restos infectados", "Podar para mejorar ventilación"]
+  },
+  "Grape___Esca_(Black_Measles)": {
+    "nombre": "Vid — Esca (sarampión negro)",
+    "cultivo": "Vid", "estado": "enfermo", "urgencia": "alta",
+    "descripcion": "Complejo de enfermedades fúngicas que afecta la madera de la vid.",
+    "sintomas": ["Manchas intervenales amarillas o rojas en hojas", "Frutos con manchas negras puntiformes", "Secado súbito de la planta en verano"],
+    "tratamiento": ["No existe tratamiento curativo efectivo", "Eliminar y destruir plantas muy afectadas", "Desinfectar herramientas de poda"]
+  },
+  "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+    "nombre": "Vid — Mancha foliar de isariopsis",
+    "cultivo": "Vid", "estado": "enfermo", "urgencia": "media",
+    "descripcion": "Enfermedad fúngica que afecta principalmente las hojas al final de la temporada.",
+    "sintomas": ["Manchas angulares oscuras en el haz", "Lesiones con halo amarillo", "Caída prematura de hojas"],
+    "tratamiento": ["Aplicar fungicida al detectar primeros síntomas", "Mejorar drenaje y ventilación del viñedo"]
+  },
+  "Grape___healthy": {
+    "nombre": "Vid — Planta sana",
+    "cultivo": "Vid", "estado": "sano", "urgencia": "ninguna",
+    "descripcion": "La vid está en buen estado fitosanitario.",
+    "sintomas": [],
+    "tratamiento": ["Mantener podas sanitarias anuales", "Controlar humedad en el follaje"]
+  },
+  "Orange___Haunglongbing_(Citrus_greening)": {
+    "nombre": "Naranja — Enverdecimiento de los cítricos (HLB)",
+    "cultivo": "Naranja", "estado": "enfermo", "urgencia": "alta",
+    "descripcion": "Enfermedad bacteriana devastadora transmitida por insectos. Sin cura conocida.",
+    "sintomas": ["Hojas con moteado asimétrico amarillo-verde", "Frutos pequeños, deformados y de sabor amargo", "Muerte progresiva de ramas"],
+    "tratamiento": ["No tiene cura — eliminar plantas infectadas para evitar propagación", "Controlar el insecto vector (psílido asiático)", "Usar material vegetal certificado libre de la enfermedad"]
+  },
+  "Peach___Bacterial_spot": {
+    "nombre": "Durazno — Mancha bacteriana",
+    "cultivo": "Durazno", "estado": "enfermo", "urgencia": "media",
+    "descripcion": "Infección bacteriana que afecta hojas, ramas y frutos del duraznero.",
+    "sintomas": ["Manchas acuosas que se tornan oscuras en hojas", "Perforaciones en hojas (aspecto de disparos)", "Lesiones en frutos con costra"],
+    "tratamiento": ["Aplicar bactericida cúprico en otoño y primavera", "Podar ramas muy afectadas", "Evitar heridas innecesarias en la planta"]
+  },
+  "Peach___healthy": {
+    "nombre": "Durazno — Planta sana",
+    "cultivo": "Durazno", "estado": "sano", "urgencia": "ninguna",
+    "descripcion": "El duraznero está en buen estado.",
+    "sintomas": [],
+    "tratamiento": ["Fertilizar en primavera", "Regar regularmente en verano"]
+  },
+  "Pepper,_bell___Bacterial_spot": {
+    "nombre": "Pimiento — Mancha bacteriana",
+    "cultivo": "Pimiento", "estado": "enfermo", "urgencia": "media",
+    "descripcion": "Infección bacteriana que afecta hojas y frutos del pimiento.",
+    "sintomas": ["Manchas pequeñas con halo amarillo en hojas", "Lesiones en frutos con aspecto de sarna", "Caída de hojas en condiciones de humedad alta"],
+    "tratamiento": ["Aplicar bactericida cúprico preventivo", "Evitar el riego por aspersión", "Eliminar restos vegetales infectados al final del cultivo"]
+  },
+  "Pepper,_bell___healthy": {
+    "nombre": "Pimiento — Planta sana",
+    "cultivo": "Pimiento", "estado": "sano", "urgencia": "ninguna",
+    "descripcion": "El pimiento está en buen estado.",
+    "sintomas": [],
+    "tratamiento": ["Mantener riego regular", "Fertilizar con potasio en la etapa de fructificación"]
+  },
+  "Potato___Early_blight": {
+    "nombre": "Papa — Tizón temprano",
+    "cultivo": "Papa", "estado": "enfermo", "urgencia": "media",
+    "descripcion": "Enfermedad fúngica causada por Alternaria solani que reduce el área foliar de la papa.",
+    "sintomas": ["Manchas oscuras con anillos concéntricos (aspecto de diana)", "Las manchas aparecen primero en hojas más viejas", "Amarillamiento del tejido alrededor de las lesiones"],
+    "tratamiento": ["Aplicar fungicida con clorotalonil o mancozeb", "Evitar el exceso de humedad en el follaje", "Retirar hojas muy afectadas"]
+  },
+  "Potato___Late_blight": {
+    "nombre": "Papa — Tizón tardío",
+    "cultivo": "Papa", "estado": "enfermo", "urgencia": "alta",
+    "descripcion": "Enfermedad devastadora causada por Phytophthora infestans. Puede destruir el cultivo completo en pocos días.",
+    "sintomas": ["Manchas acuosas de color verde oscuro en hojas", "Borde blancuzco bajo las hojas en condiciones de humedad", "Tubérculos con podredumbre interna parda"],
+    "tratamiento": ["Aplicar fungicida sistémico inmediatamente (metalaxil + mancozeb)", "Destruir plantas muy afectadas para evitar contagio", "Cosechar anticipadamente si el ataque es severo", "NO regar por aspersión"]
+  },
+  "Potato___healthy": {
+    "nombre": "Papa — Planta sana",
+    "cultivo": "Papa", "estado": "sano", "urgencia": "ninguna",
+    "descripcion": "La papa está en buen estado.",
+    "sintomas": [],
+    "tratamiento": ["Aplicar fertilizante en aporque", "Regar regularmente evitando encharcamiento"]
+  },
+  "Raspberry___healthy": {
+    "nombre": "Frambuesa — Planta sana",
+    "cultivo": "Frambuesa", "estado": "sano", "urgencia": "ninguna",
+    "descripcion": "La frambuesa está en buen estado.",
+    "sintomas": [],
+    "tratamiento": ["Podar cañas viejas al finalizar la cosecha"]
+  },
+  "Soybean___healthy": {
+    "nombre": "Soja — Planta sana",
+    "cultivo": "Soja", "estado": "sano", "urgencia": "ninguna",
+    "descripcion": "La soja está en buen estado.",
+    "sintomas": [],
+    "tratamiento": ["Monitorear plagas insectiles periódicamente"]
+  },
+  "Squash___Powdery_mildew": {
+    "nombre": "Zapallo — Oídio",
+    "cultivo": "Zapallo", "estado": "enfermo", "urgencia": "media",
+    "descripcion": "Hongo que produce polvo blanco en la superficie de las hojas de cucurbitáceas.",
+    "sintomas": ["Polvo blanco en el haz de las hojas", "Hojas que se amarillan y secan", "Afecta primero las hojas más viejas"],
+    "tratamiento": ["Aplicar fungicida con azufre o potasio bicarbonato", "Mejorar la ventilación entre plantas", "Evitar exceso de nitrógeno en la fertilización"]
+  },
+  "Strawberry___Leaf_scorch": {
+    "nombre": "Frutilla — Quemado foliar",
+    "cultivo": "Frutilla", "estado": "enfermo", "urgencia": "media",
+    "descripcion": "Enfermedad fúngica que produce necrosis en los bordes de las hojas de frutilla.",
+    "sintomas": ["Manchas pequeñas de color púrpura en hojas", "Los bordes de las hojas se tornan marrones y secos", "Hojas con aspecto quemado"],
+    "tratamiento": ["Aplicar fungicida preventivo al inicio de la temporada", "Eliminar hojas secas y restos del cultivo anterior", "Evitar el riego por aspersión"]
+  },
+  "Strawberry___healthy": {
+    "nombre": "Frutilla — Planta sana",
+    "cultivo": "Frutilla", "estado": "sano", "urgencia": "ninguna",
+    "descripcion": "La frutilla está en buen estado.",
+    "sintomas": [],
+    "tratamiento": ["Renovar plantación cada 2-3 años", "Mantener buen drenaje del suelo"]
+  },
+  "Tomato___Bacterial_spot": {
+    "nombre": "Tomate — Mancha bacteriana",
+    "cultivo": "Tomate", "estado": "enfermo", "urgencia": "media",
+    "descripcion": "Infección bacteriana que afecta hojas, tallos y frutos del tomate.",
+    "sintomas": ["Manchas pequeñas de aspecto acuoso", "Lesiones oscuras con halo amarillo en hojas", "Frutos con manchas elevadas de aspecto costroso"],
+    "tratamiento": ["Aplicar bactericida cúprico", "Evitar mojar el follaje al regar", "Retirar y destruir hojas muy afectadas"]
+  },
+  "Tomato___Early_blight": {
+    "nombre": "Tomate — Tizón temprano",
+    "cultivo": "Tomate", "estado": "enfermo", "urgencia": "alta",
+    "descripcion": "Enfermedad fúngica causada por Alternaria solani. Muy común en tomate.",
+    "sintomas": ["Manchas oscuras con anillos concéntricos en hojas inferiores", "Amarillamiento alrededor de las lesiones", "Caída de hojas afectadas"],
+    "tratamiento": ["Retirar las hojas afectadas de inmediato", "Aplicar fungicida con clorotalonil o mancozeb", "Evitar regar por las noches", "Revisar plantas vecinas"]
+  },
+  "Tomato___Late_blight": {
+    "nombre": "Tomate — Tizón tardío",
+    "cultivo": "Tomate", "estado": "enfermo", "urgencia": "alta",
+    "descripcion": "Enfermedad muy agresiva causada por Phytophthora infestans. Puede destruir el cultivo en días.",
+    "sintomas": ["Manchas acuosas de color verde oscuro a negro", "Moho blancuzco en el envés de las hojas", "Frutos con manchas marrones internas"],
+    "tratamiento": ["Aplicar fungicida sistémico de inmediato (metalaxil)", "No regar por aspersión", "Destruir plantas muy afectadas"]
+  },
+  "Tomato___Leaf_Mold": {
+    "nombre": "Tomate — Moho de la hoja",
+    "cultivo": "Tomate", "estado": "enfermo", "urgencia": "media",
+    "descripcion": "Enfermedad fúngica frecuente en cultivos bajo invernadero con alta humedad.",
+    "sintomas": ["Manchas amarillas en el haz de las hojas", "Moho verde-grisáceo en el envés", "Hojas que se secan de adentro hacia afuera"],
+    "tratamiento": ["Reducir la humedad relativa del invernadero", "Aplicar fungicida preventivo", "Mejorar ventilación entre plantas"]
+  },
+  "Tomato___Septoria_leaf_spot": {
+    "nombre": "Tomate — Mancha de septoria",
+    "cultivo": "Tomate", "estado": "enfermo", "urgencia": "media",
+    "descripcion": "Enfermedad fúngica que comienza en las hojas inferiores y asciende rápidamente.",
+    "sintomas": ["Manchas circulares con centro blancuzco y borde oscuro", "Puntos negros diminutos dentro de las manchas", "Amarillamiento y caída de hojas inferiores"],
+    "tratamiento": ["Aplicar fungicida con clorotalonil", "Evitar mojar el follaje", "Eliminar hojas afectadas y restos vegetales"]
+  },
+  "Tomato___Spider_mites Two-spotted_spider_mite": {
+    "nombre": "Tomate — Araña roja (ácaro bimaculado)",
+    "cultivo": "Tomate", "estado": "enfermo", "urgencia": "media",
+    "descripcion": "Plaga de ácaros que causa daños severos en condiciones de calor y sequía.",
+    "sintomas": ["Punteado amarillento en el haz de las hojas", "Telarañas finas en el envés", "Hojas bronceadas y secas en ataques severos"],
+    "tratamiento": ["Aplicar acaricida (abamectina o azufre mojable)", "Aumentar la humedad relativa del ambiente", "Eliminar malezas que actúan como refugio"]
+  },
+  "Tomato___Target_Spot": {
+    "nombre": "Tomate — Mancha objetivo",
+    "cultivo": "Tomate", "estado": "enfermo", "urgencia": "media",
+    "descripcion": "Enfermedad fúngica que produce manchas con anillos concéntricos en hojas y frutos.",
+    "sintomas": ["Manchas marrones con anillos concéntricos en hojas", "Lesiones en frutos con aspecto de diana", "Caída de hojas en ataques severos"],
+    "tratamiento": ["Aplicar fungicida trifloxistrobina o azoxistrobina", "Reducir el exceso de humedad en el follaje", "Eliminar restos vegetales infectados"]
+  },
+  "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+    "nombre": "Tomate — Virus del enrollamiento amarillo",
+    "cultivo": "Tomate", "estado": "enfermo", "urgencia": "alta",
+    "descripcion": "Enfermedad viral transmitida por la mosca blanca. Sin tratamiento curativo.",
+    "sintomas": ["Hojas pequeñas, enrolladas hacia arriba y amarillentas", "Planta con porte achaparrado", "Frutos deformados y en poca cantidad"],
+    "tratamiento": ["No existe cura — eliminar plantas infectadas", "Controlar la mosca blanca con insecticida sistémico", "Usar variedades resistentes al virus", "Colocar mallas antiinsectos en invernadero"]
+  },
+  "Tomato___Tomato_mosaic_virus": {
+    "nombre": "Tomate — Virus del mosaico",
+    "cultivo": "Tomate", "estado": "enfermo", "urgencia": "alta",
+    "descripcion": "Enfermedad viral que se transmite por contacto y herramientas contaminadas.",
+    "sintomas": ["Mosaico verde claro-oscuro en las hojas", "Hojas deformadas y ampolleadas", "Frutos con manchas internas amarillas"],
+    "tratamiento": ["No tiene cura — eliminar plantas muy afectadas", "Desinfectar herramientas con lejía al 10%", "Lavarse las manos antes de manipular las plantas", "No fumar cerca del cultivo (el virus se transmite por tabaco)"]
+  },
+  "Tomato___healthy": {
+    "nombre": "Tomate — Planta sana",
+    "cultivo": "Tomate", "estado": "sano", "urgencia": "ninguna",
+    "descripcion": "El tomate está en buen estado fitosanitario. No se detectaron enfermedades.",
+    "sintomas": [],
+    "tratamiento": ["Mantener riego regular sin mojar el follaje", "Fertilizar con potasio en etapa de fructificación", "Revisar periódicamente el envés de las hojas"]
+  }
+}
