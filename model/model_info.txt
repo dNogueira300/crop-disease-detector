@@ -1,0 +1,5 @@
+Modelo: MobileNetV2
+Fuente: Hugging Face — Daksh159/plant-disease-mobilenetv2
+Dataset: PlantVillage (54,306 imagenes)
+Clases: 38
+Precision aprox: 90%
