@@ -1,22 +1,28 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import Header from './components/Header';
-import HeroSection from './components/HeroSection';
+import LandingPage from './components/LandingPage';
 import UploadZone from './components/UploadZone';
 import LoadingOverlay from './components/LoadingOverlay';
 import ResultCard from './components/ResultCard';
 import { diagnosticarImagen } from './services/api';
-import { AlertCircle, ExternalLink } from 'lucide-react';
+import { AlertCircle, ExternalLink, Leaf } from 'lucide-react';
 import './App.css';
 
 export default function App() {
   const [resultado, setResultado] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  const diagnosisRef = useRef(null);
+
+  function scrollToDiagnosis() {
+    diagnosisRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
 
   async function handleFileSelect(f) {
     setResultado(null);
     setError(null);
     setLoading(true);
+    scrollToDiagnosis();
     try {
       const res = await diagnosticarImagen(f);
       setResultado(res);
@@ -29,12 +35,18 @@ export default function App() {
 
   return (
     <div className="app">
-      <Header />
+      <Header onDiagnosticar={scrollToDiagnosis} />
 
-      <main className="main">
-        <div className="container">
+      {/* LANDING */}
+      <LandingPage onDiagnosticar={scrollToDiagnosis} />
 
-          {!resultado && !loading && <HeroSection />}
+      {/* DIAGNOSIS SECTION */}
+      <section ref={diagnosisRef} className="diagnosis-section">
+        <div className="diagnosis-header">
+          <Leaf size={18} color="var(--green-600)" />
+          <h2>Diagnóstico</h2>
+        </div>
+        <div className="diagnosis-container">
 
           <UploadZone onFileSelect={handleFileSelect} loading={loading} />
 
@@ -50,14 +62,12 @@ export default function App() {
           {resultado && !loading && <ResultCard resultado={resultado} />}
 
         </div>
-      </main>
+      </section>
 
       <footer className="footer">
         <span className="footer-item">Dr. Cultivo</span>
         <span className="footer-dot" />
-        <span className="footer-item">PlantVillage · MobileNetV2</span>
-        <span className="footer-dot" />
-        <span className="footer-item">38 clases · ~90% precisión</span>
+        <span className="footer-item">PlantVillage · MobileNetV2 · 38 clases</span>
         <span className="footer-dot" />
         <a
           href="https://github.com/dNogueira300/crop-disease-detector"
@@ -65,7 +75,7 @@ export default function App() {
           className="footer-item"
           style={{ color: 'inherit', textDecoration: 'none', display: 'flex', gap: '0.3rem', alignItems: 'center' }}
         >
-          <ExternalLink size={13} /> GitHub
+          <ExternalLink size={12} /> GitHub
         </a>
       </footer>
     </div>
