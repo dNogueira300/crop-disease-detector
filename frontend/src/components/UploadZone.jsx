@@ -28,13 +28,7 @@ export default function UploadZone({ onFileSelect, loading }) {
         onDrop={onDrop}
         style={{ cursor: loading ? 'not-allowed' : 'pointer' }}
       >
-        <input
-          ref={inputRef}
-          type="file"
-          accept="image/*"
-          hidden
-          onChange={(e) => handleFile(e.target.files[0])}
-        />
+        <input ref={inputRef} type="file" accept="image/*" hidden onChange={(e) => handleFile(e.target.files[0])} />
         {preview ? (
           <img src={preview} alt="Vista previa" className="preview-img" />
         ) : (
@@ -42,18 +36,18 @@ export default function UploadZone({ onFileSelect, loading }) {
             <div className="drop-icon-wrap">
               <ImagePlus size={30} strokeWidth={1.5} />
             </div>
-            <h3>Subí la foto de una hoja</h3>
-            <p>Arrastrá la imagen aquí o hacé clic para seleccionar</p>
-            <span className="drop-hint">JPG · PNG · WEBP · hasta 10MB</span>
+            <h3>Sube la foto de una hoja</h3>
+            <p>Arrastra la imagen aquí o haz clic para seleccionar</p>
+            <span className="drop-hint">JPG · PNG · WEBP · hasta 10 MB</span>
           </div>
         )}
       </div>
 
       {preview && !loading && (
         <div className="upload-actions">
-          <button className="btn-primary" onClick={() => onFileSelect && inputRef.current.click()} disabled={loading}>
+          <button className="btn-primary" onClick={() => inputRef.current.click()} disabled={loading}>
             <Microscope size={17} />
-            Volver a diagnosticar
+            Diagnosticar de nuevo
           </button>
           <button className="btn-secondary" onClick={() => { setPreview(null); inputRef.current.click(); }}>
             <RefreshCw size={16} />

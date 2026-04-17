@@ -1,18 +1,26 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import Header from './components/Header';
 import LandingPage from './components/LandingPage';
 import UploadZone from './components/UploadZone';
 import LoadingOverlay from './components/LoadingOverlay';
 import ResultCard from './components/ResultCard';
 import { diagnosticarImagen } from './services/api';
+import useScrollReveal from './hooks/useScrollReveal';
 import { AlertCircle, ExternalLink, Leaf } from 'lucide-react';
 import './App.css';
 
 export default function App() {
   const [resultado, setResultado] = useState(null);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
+  const [loading, setLoading]     = useState(false);
+  const [error, setError]         = useState(null);
+  const [loaded, setLoaded]       = useState(false);
   const diagnosisRef = useRef(null);
+
+  // Page-load fade-in
+  useEffect(() => { requestAnimationFrame(() => setLoaded(true)); }, []);
+
+  // Scroll-reveal for .reveal elements
+  useScrollReveal('.reveal');
 
   function scrollToDiagnosis() {
     diagnosisRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -34,10 +42,9 @@ export default function App() {
   }
 
   return (
-    <div className="app">
+    <div className={`app ${loaded ? 'app--loaded' : ''}`}>
       <Header onDiagnosticar={scrollToDiagnosis} />
 
-      {/* LANDING */}
       <LandingPage onDiagnosticar={scrollToDiagnosis} />
 
       {/* DIAGNOSIS SECTION */}
@@ -47,20 +54,15 @@ export default function App() {
           <h2>Diagnóstico</h2>
         </div>
         <div className="diagnosis-container">
-
           <UploadZone onFileSelect={handleFileSelect} loading={loading} />
-
           {loading && <LoadingOverlay />}
-
           {error && !loading && (
             <div className="error-msg">
               <AlertCircle size={16} style={{ flexShrink: 0, marginTop: 1 }} />
               <div><strong>No se pudo completar el diagnóstico.</strong><br />{error}</div>
             </div>
           )}
-
           {resultado && !loading && <ResultCard resultado={resultado} />}
-
         </div>
       </section>
 
@@ -72,8 +74,7 @@ export default function App() {
         <a
           href="https://github.com/dNogueira300/crop-disease-detector"
           target="_blank" rel="noopener noreferrer"
-          className="footer-item"
-          style={{ color: 'inherit', textDecoration: 'none', display: 'flex', gap: '0.3rem', alignItems: 'center' }}
+          className="footer-item footer-link"
         >
           <ExternalLink size={12} /> GitHub
         </a>
