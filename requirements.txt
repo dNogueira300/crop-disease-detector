@@ -1,0 +1,9 @@
+torch==2.11.0
+torchvision==0.26.0
+Pillow
+fastapi
+uvicorn[standard]
+python-multipart
+numpy>=2.0
+requests
+huggingface_hub>=1.0

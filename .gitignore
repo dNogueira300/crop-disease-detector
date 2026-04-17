@@ -1,0 +1,30 @@
+# Modelo (archivo pesado — no subir al repo)
+model/*.pth
+model/*.h5
+model/*.pt
+
+# Entorno virtual
+venv/
+.venv/
+env/
+
+# Caché Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Variables de entorno
+.env
+.env.local
+
+# IDEs
+.vscode/
+.idea/
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Node
+node_modules/
+frontend/dist/
