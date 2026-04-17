@@ -14,16 +14,20 @@ app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], all
 with open(DICT_PATH, encoding="utf-8") as f:
     DISEASES = json.load(f)
 
-# Se monta /static después del build de React (npm run build)
-if os.path.isdir(STATIC):
-    app.mount("/assets", StaticFiles(directory=os.path.join(STATIC, "assets")), name="assets")
-
 @app.get("/")
 def index():
     index_path = os.path.join(STATIC, "index.html")
     if os.path.isfile(index_path):
         return FileResponse(index_path)
-    return {"message": "API Dr. Cultivo funcionando. Ejecuta 'npm run build' en /frontend para activar la interfaz."}
+    return {"message": "API Dr. Cultivo. Ejecuta 'npm run build' en /frontend para activar la interfaz."}
+
+@app.get("/favicon.svg")
+def favicon():
+    return FileResponse(os.path.join(STATIC, "favicon.svg"))
+
+@app.get("/icons.svg")
+def icons():
+    return FileResponse(os.path.join(STATIC, "icons.svg"))
 
 @app.post("/diagnostico")
 async def diagnosticar(imagen: UploadFile = File(...)):
@@ -50,3 +54,7 @@ async def diagnosticar(imagen: UploadFile = File(...)):
         "sintomas": info["sintomas"],
         "tratamiento": info["tratamiento"]
     }
+
+# Montar /assets al final (después de todas las rutas de API)
+if os.path.isdir(os.path.join(STATIC, "assets")):
+    app.mount("/assets", StaticFiles(directory=os.path.join(STATIC, "assets")), name="assets")
